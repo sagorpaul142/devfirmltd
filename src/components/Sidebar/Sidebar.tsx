@@ -357,6 +357,10 @@ export default function Sidebar() {
                         Menus.map((menu) => (
                             <li key={menu.id} className={'mb-2 p-0 m-0 last:mb-0'}>
                                 <Link href={`${menu?.url}`}
+                                      onClick={() => {
+                                          setSubMenuName(menu.name)
+                                          setSubMenuOpen(!subMenuOpen)
+                                      }}
                                       className={`flex py-3 px-4 gap-x-4 ${open ? 'items-center' : 'justify-center'} ${pathName === menu?.url && 'bg-white-50 rounded-l-3xl'}`}>
                                     {menu?.icon}
                                     <span
