@@ -2,7 +2,8 @@
 
 import { NextApiRequest, NextApiResponse } from 'next';
 
-export default function handler(
+// export default function handler(
+function handler(
   req: NextApiRequest,
   res: NextApiResponse<any>
 ) {
