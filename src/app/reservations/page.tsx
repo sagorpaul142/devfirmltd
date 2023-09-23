@@ -8,7 +8,7 @@ const Page = () => {
     return (
         <main className={`${open ? 'ml-[375px]' : 'ml-32'} bg-white rounded-[10px] mr-6`}>
             <div className="pt-8 pb-5">
-                <h1 className="font-semibold text-2xl ml-8">Planes</h1>
+                <h1 className="font-semibold text-2xl ml-8">Reservations</h1>
             </div>
         </main>
     );
